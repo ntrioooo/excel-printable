@@ -6,3 +6,9 @@
 body {
   font-family: 'Inter';
 }
+
+@media print {
+  .no-print {
+    display: none;
+  }
+}
