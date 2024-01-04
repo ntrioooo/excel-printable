@@ -62,27 +62,27 @@ function App() {
         </button>
       </div>
 
-      <div className="mt-8">
-        <table className="w-full table-fixed">
+      <div className="mt-2 overflow-x-auto">
+        <table className="w-full table-fixed border-collapse border border-gray-300">
           <thead>
-            <tr>
-              <th>No</th>
-              <th>Nama</th>
-              <th>No HP</th>
-              <th>Email</th>
-              <th>Ceklis Diterima</th>
-              <th>Ceklis Kembali</th>
+            <tr className="text-[10px]">
+              <th className="border">No</th>
+              <th className="border">No HP</th>
+              <th className="border">Email</th>
+              <th className="border">Nama</th>
+              <th className="border">Ceklis Diterima</th>
+              <th className="border">Ceklis Kembali</th>
             </tr>
           </thead>
-          <tbody className="text-center text-sm">
+          <tbody className="text-center text-[7px]">
             {items.map((d) => (
               <tr key={d.No}>
-                <td>{d.No}</td>
-                <td>{d.Nama}</td>
-                <td>{d.HP}</td>
-                <td>{d.Email}</td>
-                <td></td>
-                <td></td>
+                <td className="border">{d.No}</td>
+                <td className="border">{d.Nama}</td>
+                <td className="border">{d.HP}</td>
+                <td className="border">{d.Email}</td>
+                <td className="border"></td>
+                <td className="border"></td>
               </tr>
             ))}
           </tbody>
